@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: Lato, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/1385507.jpg");
+}
+
+.wrapper {
+    position: relative;
+    display: table;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    box-shadow: 2px 2px 10px black;
+    background: #171717;
+}
+
+.wrapper2 {
+    position: relative;
+    display: table;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    box-shadow: 2px 2px 10px black;
+    background: white;
+}
+
+
+h1 {
+    margin-top: 25px;
+    color: #FF7700;
+    font-family: LAMEBRAINS, Lato, sans-serif;
+    font-size: 54px;
+    text-shadow: 0 0 10px black;
+}
+
+h5 {
+    margin-top: 25px;
+    color: black;
+    font-family: LAMEBRAINS, Lato, sans-serif;
+    font-size: 54px;
+}
+
+h6 {
+    margin-top: 100px;
+    color: black;
+    font-family: Lato, sans-serif;
+}
+
+
+
+h3 {
+    margin-top: 100px;
+    color: #FF7700;
+    font-family: Lato, sans-serif;
+}
+
+h4 {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #FF7700;
+    font-family: Lato, sans-serif;
+}
+
+.pricediv {
+    position: relative;
+    display: table;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    box-shadow: 2px 2px 10px black;
+    background: black;
+}
+
+.h7 {
+    margin-top: 20px;
+}
+
+::selection{
+    background: #ff7700;
+    color: #fff;
+}
+
+.succes_message {
+    max-width: 400px;
+    height: auto;
+    padding: 1em;
+    background: lightgreen;
+    color: green;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+}
+
+.form-wrapper{
+    margin: auto;
+    margin-top: 2em;
+    color: white;
+    overflow: hidden;
+    max-width: 400px;
+    background: #171717;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px black;
+}
+.form-wrapper .title-text{
+    display: flex;
+    width: 200%;
+}
+.form-wrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-wrapper .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid #ff7700;
+    border-radius: 25px;
+}
+.slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+    color: #000;
+}
+.slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background: #ff7700;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.form input {
+    box-shadow: 0 0 4px black;
+}
+
+input[type="radio"]{
+    display: none;
+}
+#signup:checked ~ .slider-tab{
+    left: 50%;
+}
+#signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+}
+#signup:checked ~ label.login{
+    color: #7a7a7a;
+}
+#login:checked ~ label.signup{
+    color: #7a7a7a;
+}
+#login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+}
+.form-wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+}
+.form-container .form-inner{
+    display: flex;
+    width: 200%;
+}
+.form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+    border-color: #ff7700;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+    color: #ff7700;
+}
+.form-inner form .pass-link{
+    margin-top: 5px;
+}
+.form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+    color: #ff7700;
+    text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+    text-decoration: underline;
+}
+form .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: #ff7700;
+    border-radius: 15px;
+    transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+    left: 0;
+}
+form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper2 {
+        width: 100%;
+    }
+}
